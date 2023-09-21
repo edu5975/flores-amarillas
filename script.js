@@ -30,7 +30,7 @@ function createFlower() {
             // Verificar si la nueva posición está lo suficientemente alejada de las posiciones existentes
             for (const position of existingPositions) {
                 const distance = Math.sqrt(Math.pow(position.x - randomX, 2) + Math.pow(position.y - randomY, 2));
-                if (distance < 50) { // Rango de 300 píxeles recomendado para pc, en celular con 50
+                if (distance < 0) { // Rango de 300 píxeles recomendado para pc, en celular con 0
                     positionValid = false;
                     break;
                 }

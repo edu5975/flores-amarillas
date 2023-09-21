@@ -9,7 +9,7 @@ function createFlower() {
         return; // No crear más flores
     }
 
-    // Número máximo de flores a crear simultáneamente (entre 1 y 5)
+    // Número máximo de flores a crear simultáneamente (entre 1 y 10)
     const maxFlowers = Math.ceil(Math.random() * 10 + 1);
     const flowerSize = 200; // Tamaño de la flor
 

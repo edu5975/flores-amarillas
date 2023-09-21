@@ -16,6 +16,7 @@ h1 {
     font-size: 36px;
     color: #8B4513;
     margin-top: 20px;
+    z-index: 1;
 }
 
 .flower-container {
@@ -32,8 +33,8 @@ h1 {
 }
 
 .petal {
-    width: 60px;
-    height: 120px;
+    width: 45px;
+    height: 90px;
     background-color: #FFD700;
     border-radius: 50%;
     position: absolute;

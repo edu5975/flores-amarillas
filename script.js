@@ -2,16 +2,16 @@ function createFlower() {
     const flowerContainer = document.querySelector(".flower-container");
 
     // Número máximo de flores en pantalla
-    const maxFlowersOnScreen = 20;
+    const maxFlowersOnScreen = 15;
 
     // Verificar si ya hay 10 flores en pantalla
     if (document.querySelectorAll(".flower").length >= maxFlowersOnScreen) {
         return; // No crear más flores
     }
 
-    // Número máximo de flores a crear simultáneamente (entre 1 y 10)
-    const maxFlowers = Math.ceil(Math.random() * 10 + 1);
-    const flowerSize = 200; // Tamaño de la flor
+    // Número máximo de flores a crear simultáneamente (entre 1 y 5)
+    const maxFlowers = Math.ceil(Math.random() * 5 + 1);
+    const flowerSize = 100; // Tamaño de la flor
 
     // Arrays para almacenar las posiciones de las flores existentes
     const existingPositions = [];
@@ -30,7 +30,7 @@ function createFlower() {
             // Verificar si la nueva posición está lo suficientemente alejada de las posiciones existentes
             for (const position of existingPositions) {
                 const distance = Math.sqrt(Math.pow(position.x - randomX, 2) + Math.pow(position.y - randomY, 2));
-                if (distance < 150) { // Rango de 150 píxeles
+                if (distance < 50) { // Rango de 300 píxeles recomendado para pc, en celular con 50
                     positionValid = false;
                     break;
                 }

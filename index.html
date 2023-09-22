@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Tal vez no sean reales, pero no te quedas sin tus flores amarillas</h1>
-        <h1>Te amo <3</h1>
+        <h1>Te Quiero <3</h1>
         <div class="flower-container">
             <!-- Las flores se agregarán y eliminarán aquí mediante JavaScript -->
         </div>
